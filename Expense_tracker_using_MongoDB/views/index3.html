@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/index3.css">
+    <script src="https://kit.fontawesome.com/b16e4e26d6.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    <header>
+
+        <a class="navbar-brand" href="#"><img src="/images/logo.jpg" alt="brand-image" width="50px" height="50px"></a>
+        <h2 id="headl">Expense Tracker</h2>
+        <nav >
+
+            <ul id="sidemenu">
+            
+                <li>
+                    <a href="index3"  class="active">Home</a>
+                </li>
+                <li>
+                    <a href="index1" >Add-Expense</a>
+                </li>
+                <li>
+                    <a href="index2">Track-Expenses</a>
+                </li>
+                <li>
+                    <a href="index4">Premium Features</a>
+                </li>
+                <li>
+                    <a href="login">Log Out</a>
+                </li>
+                <i class="fa-solid fa-xmark non" onclick="closemenu()"></i>
+             
+            </ul>
+            <i class="fa-solid fa-bars non" id="open"onclick="openmenu()"></i>
+        </nav>
+    </header>
+    
+   
+
+
+    <div class="profile-container">
+        <div class="profile-editor">
+            <img id="previewImage" src="/images/dummyimg.png" alt="Profile Image" class="profile-image">
+            <div id="username"></div>
+            <div class="options">
+                <button id="uploadButton" class="edit-button">Upload </button>
+                <button id="removeButton" class="edit-button">Remove</button>
+                <input type="file" id="fileInput">
+            </div>
+            <button id="editButton" class="edit-button">Edit Profile</button>
+             
+            
+
+        </div>
+        <div id="welcomeMessage"></div>
+
+        
+    </div>
+    
+
+  
+
+    
+     
+
+    <section class="feature">
+        <h2>Add Your Expenses</h2>
+        <p>Easily track your expenses by adding them here.</p>
+        <a href="index1">Go to Expense Tracker</a>
+    </section>
+
+    <section class="feature">
+        <h2>Keep Tabs on Your Daily Expenditure</h2>
+        <p>Stay Informed About Your Daily Expenses</p>
+        <a href="index2">View now</a>
+    </section>
+
+    <section class="feature">
+        <h2>Unlock Premium Features</h2>
+        <p>Upgrade to access exclusive features for better expense management.</p>
+        <a href="index4">Upgrade Now</a>
+    </section>
+
+    <!-- Log Out -->
+    <a href="login" class="logout">Log Out</a>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+ 
+    
+
+    <script src="/js/userName.js"></script>
+    
+    
+    
+</body>
+</html>

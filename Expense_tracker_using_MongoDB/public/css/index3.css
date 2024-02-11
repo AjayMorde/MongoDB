@@ -1,0 +1,329 @@
+html{
+    background-color: #333; 
+}
+body{
+   
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand{
+    margin-left: 15px;
+
+
+}
+#headl{
+    color: #ff004f;
+    margin-left: 10px;
+
+}
+header {
+    /* background-color: #333;  */
+    background-color: #000;
+    position: fixed; 
+    width: 100%; 
+    top: 0;
+    left: 0;
+    height: 60px; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+}
+/* -------------------------- */
+
+
+
+
+/* ------------------------------- */
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+nav li {
+    margin: 0 10px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+nav a:hover {
+    color:blue; 
+}
+
+#welcomeMessage{
+    
+    
+        color: rgb(217, 214, 209);
+        font-size: 42px;
+        font-weight: 900 !important;
+        font-family: Mulish, sans-serif;
+        letter-spacing: 1.2px;
+        line-height: 60px;
+        margin-top: 90px;
+        margin-top: 20px;
+    
+    
+}
+
+/* Styles for the container */
+.welcome-message {
+    font-family: Arial, sans-serif;
+    /* background-color: #f5f5f5; */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Styles for the user name */
+.user-name {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Styles for the message */
+.welcome-message p {
+    margin: 5px 0;
+}
+
+/* Styles for the call-to-action */
+.welcome-message span {
+    font-style: italic;
+    color: #27ae60;
+}
+/* Styles for feature sections */
+.feature {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    font-size: 36px;
+    color: #fff;
+    background-color: #3498db;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.feature a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.feature a:hover {
+    background-color: #2980b9;
+}
+
+/* Style for logout button */
+.logout {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e74c3c;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+    background-color: #c0392b;
+}
+/* Styles for the active link */
+nav ul li a.active {
+    color: blue; 
+    
+}
+.non{
+    color: pink;
+}
+
+#sidemenu li{
+    margin-left: 70px;
+
+}
+
+#profile{
+   width: 200px;
+   height: 200px;
+   border: 1px solid white;
+   margin: 0px 0px 0px 570px;
+   border-radius: 50%;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    /* position: relative; */
+    /* bottom: 100px; */
+}
+
+.profile-editor {
+    text-align: center;
+    background-color: #333; 
+    border-radius: 8px;
+    padding: 30px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 3px #f4f4f4;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+#username {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#editButton{
+   background-color: rgb(120, 235, 120);
+}
+.edit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+   
+}
+#uploadButton{
+    background-color: rgb(176, 176, 231);
+}
+#removeButton{
+    background-color: rgb(252, 184, 184);
+}
+
+.edit-button:hover {
+    background-color: #ddd;
+}
+
+.options {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    padding-right: 25px;
+    width: 50px;
+    height: 20px;
+}
+
+.options.active {
+    display: flex;
+}
+
+input[type="file"] {
+    display: none;
+}
+#username{
+    color: white;
+}
+/* #welcomeMessage{
+ 
+    
+} */
+
+
+nav .non{
+    display: none;
+  }
+
+  @media only screen  and (max-width:667px){
+
+    nav .non{
+       
+        display: block;
+        font-size: 25px;
+     
+
+
+      }
+      .profile-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+        margin-top: 200px;
+        margin-bottom: 130px;
+    }
+      #sidemenu{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      
+
+      nav .non{
+        display: block;
+        font-size: 25px;
+      }
+      nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 55vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 25px;
+      
+      }
+      nav ul  .non{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+      }
+      #open{
+        margin-left: 100px;
+        position: relative;
+        right: 10px;
+      }
+      
+      
+  }

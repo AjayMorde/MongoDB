@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Expenses</title>
+    <link rel="stylesheet" href="/css/index2.css">
+    <script src="https://kit.fontawesome.com/b16e4e26d6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+
+        <a class="navbar-brand" href="#"><img src="/images/logo.jpg" alt="brand-image" width="50px" height="50px"></a>
+        <h2 id="headl">Expense Tracker</h2>
+        <nav>
+
+            <ul id="sidemenu">
+
+                <li>
+                    <a href="index3">Home</a>
+                </li>
+                <li>
+                    <a href="index1">Add-Expense</a>
+                </li>
+                <li>
+                    <a href="index2" class="active">Track-Expenses</a>
+                </li>
+                <li>
+                    <a href="index4">Premium Features</a>
+                </li>
+                <li>
+                    <a href="login">Log Out</a>
+                </li>
+                <i class="fa-solid fa-xmark non" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars non" id="open" onclick="openmenu()"></i>
+        </nav>
+    </header>
+    <br><br><br><br><br>
+
+    <h3 style="color: greenyellow;">--All Expenses List--</h3>
+
+
+    <hr>
+    <div id="TotalExpense" class="total-expense">
+
+
+    </div>
+
+    <br>
+    <div id="total-expense">
+        Total Expense of this page: ₹<span id="total-amount-pages">0.00</span>
+    </div>
+
+    <div id="expenses-list">
+
+    </div>
+    <div id="pagination"></div>
+
+    <div id="search-container">
+        <label for="pageSearch">Go to Page:</label>
+        <input type="number" id="pageSearch" />
+        <button onclick="goToPage()">Go</button>
+    </div>
+    <br><br>
+
+<hr>
+
+    <h1 id="filter-heading">Filter Expenses With Month </h1>
+    <label id="month-label"> Month</label>
+    <input type="number" placeholder="01-12" min="1" max="12" id="month">
+    <div id="invalid-inputs"></div>
+    <button id="filter-month">Filter</button>
+
+    <div id="total-expense-month">
+        Total Expense of <span id="this-month"></span> month ₹: <span id="totalExpense-amount-pages"> ₹0.00</span>
+    </div>
+    <div id="filterExpenses-list">
+
+    </div>
+
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/getExpense.js"></script>
+    <!-- <script src="./script/purchase.js"></script> -->
+
+</body>
+
+</html>

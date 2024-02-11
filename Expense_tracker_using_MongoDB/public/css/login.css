@@ -1,0 +1,72 @@
+/* Base styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000; /* Changed to black */
+    color: #fff;
+}
+
+.container {
+    background-color: #111; /* Darkened the container background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjusted shadow color */
+    text-align: center;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-forgot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    button {
+        width: 100%;
+    }
+}

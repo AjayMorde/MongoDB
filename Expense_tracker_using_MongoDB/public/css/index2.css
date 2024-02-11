@@ -1,0 +1,366 @@
+html {
+    background-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+header {
+
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+
+/* #pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+#pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center; 
+}
+
+#pagination a {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} */
+
+/* #pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#pagination a:hover {
+    background-color: #ddd;
+} */
+nav ul li a.active {
+    color: blue;
+
+}
+
+
+#headl {
+    color: #ff004f;
+    margin-left: 10px;
+
+}
+
+.navbar-brand {
+    margin-left: 15px;
+
+
+}
+
+.non {
+    color: pink;
+}
+
+#sidemenu li {
+    margin-left: 70px;
+
+}
+
+
+nav .non {
+    display: none;
+}
+
+
+@media only screen and (max-width:667px) {
+
+    nav .non {
+        display: block;
+        font-size: 25px;
+
+
+
+    }
+
+    #sidemenu {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+    nav .non {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 55vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+
+    }
+
+    nav ul .non {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    #open {
+        margin-left: 100px;
+        position: relative;
+        right: 10px;
+    }
+
+    .expense-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        border: 3px solid black;
+    }
+
+
+
+
+
+}
+
+
+/* Regular table styles */
+.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #000;
+
+}
+
+
+@media (max-width: 768px) {
+    .expense-table {
+        overflow-x: auto;
+        display: block;
+    }
+
+    .expense-table td,
+    .expense-table th {
+        min-width: 120px;
+    }
+}
+
+.expense-table th,
+.expense-table td {
+    border: 2px solid #000;
+    padding: 8px;
+}
+
+.expense-table th {
+    text-align: left;
+    background-color: rgb(236, 86, 86);
+}
+
+.expense-table button.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+#pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: white;
+}
+
+#pagination a.active {
+    background-color: #698a35;
+    color: white;
+    border: 1px solid #c1cdda;
+}
+
+
+.total-expense {
+
+
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.total-amount-container {
+
+
+    font-size: 18px;
+    color: #333;
+}
+
+.total-amount {
+
+
+    font-weight: bold;
+    font-size: 24px;
+    color: #ff6347;
+}
+
+#filter-heading {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#search-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #search-container label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #pageSearch {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  #search-container button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-container button:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* ----------------- */
+
+#month-label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#month {
+    width: 80px;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#filter-month {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#filter-month:hover {
+    background-color: #0056b3;
+}
+
+#total-expense-month {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #f7f7f7;color: black;
+  padding: 20px;
+  border-radius: 8px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#totalExpense-amount-pages {
+    font-weight: bold;
+    color: #ff0000;
+    /* display: none; */
+}

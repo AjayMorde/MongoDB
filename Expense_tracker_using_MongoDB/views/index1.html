@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSE TRACKER</title>
+    <link rel="stylesheet" href="/css/index1.css">
+    <script src="https://kit.fontawesome.com/b16e4e26d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <a class="navbar-brand" href="#"><img src="/images/logo.jpg" alt="brand-image" width="50px" height="50px"></a>
+        <h2 id="headl">Expense Tracker</h2>
+        <nav>
+
+            <ul id="sidemenu">
+
+                <li>
+                    <a href="index3">Home</a>
+                </li>
+                <li>
+                    <a href="index1" class="active">Add-Expense</a>
+                </li>
+                <li>
+                    <a href="index2">Track-Expenses</a>
+                </li>
+                <li>
+                    <a href="index4">Premium Features</a>
+                </li>
+                <li>
+                    <a href="login">Log Out</a>
+                </li>
+                <i class="fa-solid fa-xmark non" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars non" id="open" onclick="openmenu()"></i>
+        </nav>
+    </header>
+
+    <form action=" #" autocomplete="off" id="my-form">
+        <h3>EXPENSE TRACKER</h3>
+        <h6>HAVE A TRACK ON YOUR EVERYDAY EXPENDITURE!</h6>
+        <hr>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" placeholder="Enter the amount" step="0.01">
+
+        <label for="payment">Payment:</label>
+        <select id="payment" name="payment">
+            <option value="cash">Cash</option>
+            <option value="card">Card</option>
+            <option value="online">Online</option>
+            
+        </select>
+
+      
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" placeholder="Enter the description">
+
+        <label for="category">Category:</label>
+        <select name="category" id="category">
+            <option value="Fuel">Fuel</option>
+            <option value="Recharge">Recharge</option>
+            <option value="Electricity">Electricity</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Food">Food</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Groceries">Groceries</option>
+            <option value="Dining Out">Dining Out</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Travel">Travel</option>
+            <option value="Education">Education</option>
+            <option value="Home Maintenance">Home Maintenance</option>
+            <option value="Gifts">Gifts</option>
+            <option value="Insurance">Insurance</option>
+            <option value="Miscellaneous">Miscellaneous</option>
+            <option value="Technology">Technology</option>
+            <option value="Hobbies">Hobbies</option>
+            <option value="Subscription">Subscription</option>
+            <option value="Personal Care">Personal Care</option>
+        </select>
+
+        <label for="expenseDate">Expense Date:</label>
+        <input type="date" id="expenseDate" name="expenseDate">
+
+        <input type="submit" value="ADD EXPENSE"></input>
+
+    </form>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+
+
+    <script src="/js/addExpense.js"></script>
+
+
+</html>

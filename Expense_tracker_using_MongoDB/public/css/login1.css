@@ -1,0 +1,120 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.left-content img{
+    width: 550px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+#heading{
+    
+        color: rgb(217, 214, 209);
+        font-size: 42px;
+        font-weight: 900 !important;
+        font-family: Mulish, sans-serif;
+        letter-spacing: 1.2px;
+        line-height: 60px;
+        margin-top: 90px;
+    
+}
+
+
+h1, .welcome-text {
+    color: #007BFF;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.welcome-heading {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.welcome-text {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-container img {
+    max-width: 150px;
+}
+
+/* Icon Styling */
+/* Icon Styling */
+i.fas.fa-user {
+    font-size: 24px;
+    margin-right: 10px;
+
+}
+
+i.fa-regular {
+    font-size: 24px;
+    margin-right: 10px;
+   
+}
+
+i.fas.fa-lock {
+    font-size: 24px;
+    margin-right: 10px;
+    
+}
+

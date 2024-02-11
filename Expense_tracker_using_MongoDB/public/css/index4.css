@@ -1,0 +1,195 @@
+body{
+    background-color: #333; 
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+
+    background-color: #000;
+    position: fixed; 
+    width: 100%; 
+    top: 0;
+    left: 0;
+    height: 60px; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+nav li {
+    margin: 0 10px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+nav a:hover {
+    color:blue; 
+}
+
+#rzp-button1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#rzp-button1:hover {
+    background-color: #45a049;
+}
+
+
+#show-report-btn,
+#leaderboard-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#show-report-btn:hover,
+#leaderboard-button:hover {
+    background-color: #0056b3;
+}
+
+
+#show-report-btn {
+    margin-top: 10px;
+}
+
+
+#leaderboard {
+    margin-top: 20px;
+}
+
+#leaderboard h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+#leaderboard li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+#message{
+    
+    color: greenyellow;
+    font-size: 18px;
+    font-weight: bold;
+
+ 
+}
+
+
+.leaderboard-table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+nav ul li a.active {
+    color: blue; 
+    
+}
+
+
+#headl{
+    color: #ff004f;
+    margin-left: 10px;
+
+}
+.navbar-brand{
+    margin-left: 15px;
+
+
+}
+.non{
+    color: pink;
+}
+
+#sidemenu li{
+    margin-left: 70px;
+
+}
+
+
+nav .non{
+    display: none;
+  }
+
+  @media only screen  and (max-width:667px){
+
+    nav .non{
+        display: block;
+        font-size: 25px;
+     
+
+
+      }
+      #sidemenu{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      
+
+      nav .non{
+        display: block;
+        font-size: 25px;
+      }
+      nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 55vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 25px;
+      
+      }
+      nav ul  .non{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+      }
+      #open{
+        margin-left: 100px;
+        position: relative;
+        right: 10px;
+      }
+      
+      
+  }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Base styles for all screen sizes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #000; 
+            color: #fff;
+        }
+
+        .container {
+            background-color: #111; 
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+            text-align: center;
+            margin-top: 30px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button-forgot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        /* Media query for mobile devices */
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            input[type="email"],
+            input[type="password"],
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        
+        <h1 id="heading">You're back!!<br> Let's manage your expenses.</h1>
+    </div>
+    <div class="container">
+        <h1>Login to Expense Tracker</h1>
+        <h2></h2>
+        <form onsubmit="Login(event)">
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="Password">Password</label>
+            <input type="password" name "password" id="password" required>
+            <div class="button-forgot">
+                <button id="login">Login</button>
+                <a href="/forgotPassword" id="forgot-password">Forgot Password?</a>
+            </div>
+            <p>If you are a new user, <a href="/" id="sign-up">Sign up Now</a></p>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>
